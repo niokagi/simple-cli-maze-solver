@@ -57,5 +57,5 @@ _Note: For the `generate` command, dimensions will be automatically adjusted to 
 The foundational principles of Depth-First Search as a method for traversing mazes can be attributed to the 19th-century French mathematician Charles Pierre Trémaux. His work on Trémaux's algorithm established a formal, guaranteed method for finding a way out of any maze. While the modern computer science formalization of DFS was developed later, his algorithm is a direct and significant precursor.
 
 ### Online resources
-- Wikipedia: Trémaux's Algorithm - https://en.wikipedia.org/wiki/Trémaux's_algorithm
-- Wikipedia: Depth-First Search (DFS) - https://en.wikipedia.org/wiki/Depth-first_search
+- Wikipedia: [Trémaux's Algorithm](https://en.wikipedia.org/wiki/Trémaux's_algorithm)
+- Wikipedia: [Depth-First Search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search)
