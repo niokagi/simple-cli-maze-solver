@@ -20,9 +20,11 @@ const main = () => {
     );
     return;
   }
-
   console.log("Maze:");
-  maze.forEach((row) => console.log(row.join("")));
+
+  maze.forEach((row) => {
+    console.log(row.join(""));
+  });
   console.log("\n");
 
   const solutionPath = solve(maze, wall, start, end);
