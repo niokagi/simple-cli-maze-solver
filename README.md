@@ -5,7 +5,7 @@ A lightweight, command-line application built with Node.js for generating and so
 
 ---
 
-## Theoritical Foundation & Core Algorithm
+## Theoretical Foundation & Core Algorithm
 The logical core of this project's solver is a direct application of Depth-First Search (DFS), a classic and fundamental algorithm for traversing tree or graph data structures. The maze itself is treated as a graph, where each open cell is a node and each possible move (up, down, left, right) to an adjacent open cell represents an edge.
 
 The DFS strategy operates on a "last-in, first-out" principle, exploring as far as possible along each branch before backtracking. Imagine a logical explorer traversing a cave system: they will follow a single passage to its very end. If it leads to the destination, the search is complete. If it is a dead end, they backtrack to the previous junction and explore the next available, unvisited passage.
