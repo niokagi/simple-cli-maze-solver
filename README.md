@@ -26,7 +26,6 @@ In this implementation, the process is handled via recursion, which leverages th
 - [Node.js](https://nodejs.org/) (version 18.x or later recommended)
 - [npm](https://www.npmjs.com/) (typically included with Node.js)
 
----
 
 ## Installation
 
@@ -75,5 +74,5 @@ To generate a new, solvable maze, use the `generate` script. A new file (e.g., `
 
 ---
 
-### References
+## References
 The foundational principles of Depth-First Search as a method for traversing mazes can be attributed to the 19th-century French mathematician Charles Pierre Trémaux. His work on Trémaux's algorithm established a formal, guaranteed method for finding a way out of any maze. While the modern computer science formalization of DFS was developed later, his algorithm is a direct and significant precursor.
