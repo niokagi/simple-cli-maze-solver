@@ -1,8 +1,11 @@
 # Simple CLI Maze Solver & Generator
 
 A lightweight, command-line application built with Node.js for generating and solving text-based mazes. This project serves as an academic demonstration of graph traversal algorithms, procedural generation, and modern JavaScript (ESM) development practices, including a modular architecture and unit testing with Jest.
+<br>
 
 ---
+
+<br>
 
 ## Theoritical Foundation & Core Algorithm
 The logical core of this project's solver is a direct application of Depth-First Search (DFS), a classic and fundamental algorithm for traversing tree or graph data structures. The maze itself is treated as a graph, where each open cell is a node and each possible move (up, down, left, right) to an adjacent open cell represents an edge.
@@ -20,7 +23,6 @@ In this implementation, the process is handled via recursion, which leverages th
 - **Unit Tested**: Core logic for both the solver and generator is validated with unit tests using Jest.
 - **Customizable Dimensions**: Generate mazes of any specified width and height.
 
----
 
 ## Prerequisites
 
@@ -55,22 +57,6 @@ All commands should be run from the root directory of the project. The table bel
 <br>
 
 _Note: For the `generate` command, dimensions will be automatically adjusted to the nearest odd number to ensure proper corridor formation._
-
----
-## Core Concepts
-
-### Solver Algorithm
-
-The solver employs a **Depth-First Search (DFS)**, a classic graph traversal technique. It explores each possible path to its conclusion before backtracking, implemented using recursion. This method guarantees a solution if one exists and provides a clear path from the start point 'S' to the end point 'E'.
-
-### Generator Algorithm
-
-Maze generation is handled by the **Recursive Backtracking** algorithm. It operates by "carving" paths within a grid composed entirely of walls. This process creates a _perfect maze_—a maze with no closed loops and a single, unique path between any two cells, ensuring every generated maze is solvable.
-
-### Generating a Maze
-
-To generate a new, solvable maze, use the `generate` script. A new file (e.g., `maze2.txt`, `maze3.txt`) will be created in the `/mazes` directory.
-
 
 ## References
 
