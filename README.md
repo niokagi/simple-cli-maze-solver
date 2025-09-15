@@ -2,7 +2,6 @@
 
 A lightweight, command-line application built with Node.js for generating and solving text-based mazes. This project serves as an academic demonstration of graph traversal algorithms, procedural generation, and modern JavaScript (ESM) development practices, including a modular architecture and unit testing with Jest.
 
-
 ## Theoretical Foundation & Core Algorithm
 The logical core of this project's solver is a direct application of Depth-First Search (DFS), a classic and fundamental algorithm for traversing tree or graph data structures. The maze itself is treated as a graph, where each open cell is a node and each possible move (up, down, left, right) to an adjacent open cell represents an edge.
 
@@ -52,7 +51,6 @@ All commands should be run from the root directory of the project. The table bel
 
 _Note: For the `generate` command, dimensions will be automatically adjusted to the nearest odd number to ensure proper corridor formation._
 
-<br>
 
 ## References
 
