@@ -22,7 +22,7 @@ describe("Maze Generator", () => {
     mazeString = generateMaze(width, height);
     mazeGrid = mazeString.split("\n").map((row) => row.split(""));
   });
-
+  // size check
   it("should generate a maze with the correct (odd-adjusted) dimensions", () => {
     const expectedWidth = width % 2 === 0 ? width + 1 : width;
     const expectedHeight = height % 2 === 0 ? height + 1 : height;
@@ -30,12 +30,12 @@ describe("Maze Generator", () => {
     expect(mazeGrid.length).toBe(expectedHeight);
     expect(mazeGrid[0].length).toBe(expectedWidth);
   });
-
+  // valid char
   it("should only contain valid characters (#, S, E, and space)", () => {
     const validCharsRegex = /^[#SE \n]+$/;
     expect(mazeString).toMatch(validCharsRegex);
   });
-
+  // starting & end point check
   it("should contain exactly one Start (S) and one End (E) point", () => {
     const sCount = (mazeString.match(/S/g) || []).length;
     const eCount = (mazeString.match(/E/g) || []).length;
@@ -43,7 +43,7 @@ describe("Maze Generator", () => {
     expect(sCount).toBe(1);
     expect(eCount).toBe(1);
   });
-
+  // walls & borders
   it("should have solid walls on all borders", () => {
     const h = mazeGrid.length;
     const w = mazeGrid[0].length;
@@ -58,7 +58,7 @@ describe("Maze Generator", () => {
     );
     expect(sideWallsAreSolid).toBe(true);
   });
-
+  // solvable maze check
   it("should generate a solvable maze", () => {
     const start = findChar(mazeGrid, "S");
     const end = findChar(mazeGrid, "E");
